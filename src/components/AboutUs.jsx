@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <section className="bg-[#0243b9] -mt-2">
+    <section className="bg-[#0243b9] -mt-0 sm:-mt-2">
       <div className=" container-wrapper">
         <div className="relative">
           <img src="images/about-bg.png" alt="" className=" pt-[5%]" />
@@ -20,7 +20,7 @@ function AboutUs() {
               world of digital art, this collection offers a captivating
             </p>
 
-            <div className=" flex items-center justify-between gap-4 px-12">
+            <div className=" flex flex-col sm:flex-row items-center justify-between gap-4 px-12">
               <div>
                 <img src="images/cardbg.png" alt="" />
               </div>
