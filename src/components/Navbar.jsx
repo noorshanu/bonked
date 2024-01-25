@@ -1,82 +1,81 @@
 import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
 
 function Navbar() {
-  // State to manage the visibility of the mobile menu
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Function to toggle the mobile menu
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed sm:absolute w-full z-20 top-0 start-0">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-[#ffad2d] sm:bg-transparent py-4 relative  sm:absolute top-0 w-full z-40">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        {/* Logo */}
+        <div className="flex items-center flex-shrink-0 mr-6">
         <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="images/logo.png" className="h-[100px]" alt="Flowbite Logo" />
         </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            className="text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-full text-sm px-4 py-2 text-center border-2 border-[#000] font-bold"
-            onClick={toggleMobileMenu} // Add onClick event handler
-          >
-          Wallet Connect
+
+        </div>
+
+        {/* Navigation menu */}
+        <div className="hidden md:flex flex-grow justify-center">
+          <a href="#" className="text-black px-3 py-2">Home</a>
+          <a href="#" className="text-black px-3 py-2">About</a>
+          <a href="#" className="text-black px-3 py-2">Services</a>
+          <a href="#" className="text-black px-3 py-2">Contact</a>
+        </div>
+
+        {/* Wallet Connect button */}
+        <div className="md:flex items-center">
+          <button className="hidden md:block bg-[#fff] border-2 border-[#000] rounded-full hover:bg-blue-600 text-black font-bold py-2 px-4 ">
+            Wallet Connect
           </button>
+        </div>
+
+        {/* Hamburger menu for mobile */}
+        <div className="md:hidden">
           <button
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded={isMobileMenuOpen ? "true" : "false"} // Update aria-expanded attribute
-            onClick={toggleMobileMenu} // Add onClick event handler
+            className="text-black focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
           >
-            <span className="sr-only">Open main menu</span>
             <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
               fill="none"
-              viewBox="0 0 17 14"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
+                d="M4 6h16M4 12h16m-7 6h7"
               />
             </svg>
           </button>
         </div>
-        {/* Mobile menu */}
-        <div
-          className={`items-center justify-between w-full md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`} // Update visibility based on state
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
-            <li>
-              <a href="#" className="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
+
+      {/* Mobile menu */}
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div
+            ref={ref}
+            className="md:hidden bg-gray-800 px-2 pt-2 pb-3 space-y-1"
+          >
+            <a href="#" className="text-black block px-3 py-2">Home</a>
+            <a href="#" className="text-black block px-3 py-2">About</a>
+            <a href="#" className="text-black block px-3 py-2">Services</a>
+            <a href="#" className="text-black block px-3 py-2">Contact</a>
+          </div>
+        )}
+      </Transition>
     </nav>
   );
 }

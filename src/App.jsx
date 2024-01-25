@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
+    <div className=" relative">
+
+   
       <Navbar />
       <Hero />
       <BorderSec />
@@ -14,6 +17,7 @@ function App() {
       <ChooseHero />
       <div className=" -mt-[6.2%]">
         <img src="images/roadmap-head.png" alt="" className=" w-full mx-auto" />
+      </div>
       </div>
     </>
   );
