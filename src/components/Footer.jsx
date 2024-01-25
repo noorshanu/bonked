@@ -42,8 +42,12 @@ function Footer() {
               </div>
 
               <div className=" pt-[15%] flex items-center gap-6 ">
-                <a href="/" className=" font-mono font-bold text-black text-xl">About </a>
-                <a href="/">home</a>
+           
+          
+          <a href="#about" className="text-black font-bold text-lg block px-3 py-2">About</a>
+          <a href="#col" className="text-black font-bold text-lg block px-3 py-2">Collection</a>
+          <a href="#road" className="text-black font-bold text-lg block px-3 py-2">Roadmap</a>
+          <a href="#contact" className="text-black font-bold text-lg px-3 py-2">Contact Us</a>
               </div>
             </div>
           </div>
