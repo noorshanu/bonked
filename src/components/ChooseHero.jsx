@@ -17,9 +17,9 @@ function ChooseHero() {
 
 
             <div className=' flex flex-col sm:flex-row justify-evenly gap-4'>
-                <img src="images/eth.png" alt="" className=' h-[370px]' />
-                <img src="images/eth.png" alt="" className=' h-[370px]'  />
-                <img src="images/eth.png" alt=""  className=' h-[370px]' />
+                <img src="images/eth.png" alt="" className=' sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto ' />
+                <img src="images/eth.png" alt="" className=' sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto '  />
+                <img src="images/eth.png" alt=""  className=' sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto ]' />
 
             </div>
 
