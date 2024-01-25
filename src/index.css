@@ -53,10 +53,20 @@
       @apply max-w-[1140px] min-[1440px]:max-w-[1300px] w-full mx-auto px-4 lg:px-2;
     }
   }
-  
+  body{
+    background-color: #000;
+  }
 
   .hero-main{
     background-image: url('../public/images/bg-main.png');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .road-bg{
+    background-image: url('../public/images/road-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
   }

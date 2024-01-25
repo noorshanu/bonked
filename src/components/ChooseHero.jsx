@@ -2,15 +2,15 @@ import React from 'react'
 
 function ChooseHero() {
   return (
-    <section className='bg-[#0243b9] pt-[5%] pb-[8%]'>
+    <section className='bg-[#0243b9] pt-[5%] pb-[8%] overflow-x-hidden ' id='col'>
         <div className=' container-wrapper'>
 
             <div className=' relative flex flex-col sm:flex-row justify-evenly items-center gap-8 py-[6%]'>
-                <img src="images/line1.png" alt="" />
+                <img src="images/line2.png" alt="" className=' h-auto sm:h-[10px]' />
 
                 <img src="images/choos.png" alt="" />
 
-                <img src="images/line1.png" alt="" />
+                <img src="images/line1.png" alt="" className='h-auto sm:h-[10px]' />
 
             </div>
 

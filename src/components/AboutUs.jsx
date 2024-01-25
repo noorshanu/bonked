@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <section className="bg-[#0243b9] -mt-0 sm:-mt-2">
+    <section className="bg-[#0243b9] -mt-0 sm:pt-0 pt-3 sm:-mt-2" id="about">
       <div className=" container-wrapper">
         <div className="relative">
           <img src="images/about-bg.png" alt="" className=" pt-[5%] hidden sm:block" />
