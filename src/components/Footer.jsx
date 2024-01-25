@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaTelegram } from "react-icons/fa6";
 import { IoSend } from "react-icons/io5";
 function Footer() {
   return (
-    <section className=" mt-0 sm:mt-[-2%] bg-[#ffad2d] sm:bg-black " id="contact">
+    <section className=" mt-0 sm:mt-[-2%] bg-[#ffad2d] sm:bg-transparent " id="contact">
       <div className=" container-wrapper relative sm:bg-transparent ">
         <img src="images/foot-img.png" alt="" className=" h-full hidden sm:block" />
 
