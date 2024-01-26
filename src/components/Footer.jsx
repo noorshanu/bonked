@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaTelegram } from "react-icons/fa6";
 import { IoSend } from "react-icons/io5";
 function Footer() {
   return (
-    <section className=" mt-0 sm:mt-[-2%] bg-[#ffad2d] sm:bg-transparent " id="contact">
+    <section className=" mt-0 sm:mt-[-2%] bg-[#ffad2d] pb-10 sm:mb-0 sm:bg-transparent " id="contact">
       <div className=" container-wrapper relative sm:bg-transparent ">
         <img src="images/foot-img.png" alt="" className=" h-full hidden sm:block" />
 
@@ -56,28 +56,28 @@ function Footer() {
                 </button>
               </div>
 
-              <div className=" pt-[15%] flex items-center gap-0 sm:gap-6  flex-col sm:flex-row">
+              <div className=" pt-[15%] grid sm:grid-cols-4 grid-cols-2 items-center gap-2 sm:gap-6  sm:justify-normal justify-center mx-auto ">
                 <a
                   href="#about"
-                  className="text-black font-bold text-lg block px-3 py-2"
+                  className="text-black font-bold text-lg block "
                 >
                   About
                 </a>
                 <a
                   href="#col"
-                  className="text-black font-bold text-lg block px-3 py-2"
+                  className="text-black font-bold text-lg block "
                 >
                   Collection
                 </a>
                 <a
                   href="#road"
-                  className="text-black font-bold text-lg block px-3 py-2"
+                  className="text-black font-bold text-lg block "
                 >
                   Roadmap
                 </a>
                 <a
                   href="#contact"
-                  className="text-black font-bold text-lg px-3 py-2"
+                  className="text-black font-bold text-lg "
                 >
                   Contact Us
                 </a>
