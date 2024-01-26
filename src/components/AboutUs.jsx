@@ -7,7 +7,7 @@ function AboutUs() {
         <div className="relative">
           <img src="images/about-bg.png" alt="" className=" pt-[5%] hidden sm:block" />
  
-          <img src="images/mob.png" alt="" className=" block sm:hidden" />
+          <img src="images/mob.png" alt="" className=" block sm:hidden h-[750px]" />
 
           <div className=" absolute left-0 right-0 top-8 sm:top-[18%]">
             <img
