@@ -57,11 +57,11 @@
     background-color: #000;
   }
 
-  /* .hero-main{
+  .hero-main{
     background-image: url('../public/images/bg-main.png');
     background-size: cover;
     background-repeat: no-repeat;
-  } */
+  }
 
   .road-bg{
     background-image: url('../public/images/road-bg.png');
