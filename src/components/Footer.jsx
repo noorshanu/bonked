@@ -15,34 +15,23 @@ function Footer() {
 
               <div className=" flex items-center gap-4 text-white mb-6 ml-5">
                 <a
-                  href="/"
+                  href="https://x.com/bonkk_3"
                   className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
                 >
                   <BsTwitterX />
                 </a>
-                <a
-                  href="/"
-                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
-                >
-                  <BsInstagram />
-                </a>
+             
+           
 
                 <a
-                  href="/"
-                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
-                >
-                  <BsFacebook />
-                </a>
-
-                <a
-                  href="/"
+                  href="https://t.me/bonkeds" target="_blank"
                   className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
                 >
                   <FaTelegram />
                 </a>
               </div>
 
-              <img src="images/bon.png" alt="" className=" ml-2 my-4" />
+            <p>Copyright 2024 Bokended 3.0. All Rights Reserved.</p>
             </div>
 
             <div className=" mt-[5%]">
@@ -67,14 +56,9 @@ function Footer() {
                   href="#col"
                   className="text-black font-bold text-lg block "
                 >
-                  Collection
+                 Features
                 </a>
-                <a
-                  href="#road"
-                  className="text-black font-bold text-lg block "
-                >
-                  Roadmap
-                </a>
+             
                 <a
                   href="#contact"
                   className="text-black font-bold text-lg "

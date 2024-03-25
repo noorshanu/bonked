@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { BsTwitterX, BsInstagram, BsFacebook } from "react-icons/bs";
+import { FaLinkedinIn, FaTelegram } from "react-icons/fa6";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,16 +21,30 @@ function Navbar() {
         <div className="hidden md:flex flex-grow justify-center">
           <a href="/" className="text-black font-bold text-lg px-3 py-2">Home</a>
           <a href="#about" className="text-black font-bold text-lg px-3 py-2">About</a>
-          <a href="#col" className="text-black font-bold text-lg px-3 py-2">Collection</a>
-          <a href="#road" className="text-black font-bold text-lg px-3 py-2">Roadmap</a>
+          <a href="#col" className="text-black font-bold text-lg px-3 py-2">Features</a>
+         
           <a href="#contact" className="text-black font-bold text-lg px-3 py-2">Contact Us</a>
         </div>
 
         {/* Wallet Connect button */}
         <div className="md:flex items-center">
-          <button className="hidden md:block bg-[#fff] border-2 border-[#000] rounded-full hover:bg-blue-600 text-black font-bold py-2 px-4 ">
-            Wallet Connect
-          </button>
+        <div className=" flex items-center gap-4 text-white mb-6 ml-5">
+        <a
+                  href="https://x.com/bonkk_3"
+                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+                >
+                  <BsTwitterX />
+                </a>
+             
+           
+
+                <a
+                  href="https://t.me/bonkeds" target="_blank"
+                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+                >
+                  <FaTelegram />
+                </a>
+              </div>
         </div>
 
         {/* Hamburger menu for mobile */}
@@ -73,9 +89,25 @@ function Navbar() {
             <a href="/" className="text-black font-bold text-lg block px-3 py-2">Home</a>
           
             <a href="#about" className="text-black font-bold text-lg block px-3 py-2">About</a>
-            <a href="#col" className="text-black font-bold text-lg block px-3 py-2">Collection</a>
-            <a href="#road" className="text-black font-bold text-lg block px-3 py-2">Roadmap</a>
-            <a href="#contact" className="text-black font-bold text-lg px-3 py-2">Contact Us</a>
+            <a href="#col" className="text-black font-bold text-lg block px-3 py-2">Features</a>
+            
+            <div className=" flex items-center gap-4 text-white mb-6 ml-5">
+            <a
+                  href="https://x.com/bonkk_3"
+                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+                >
+                  <BsTwitterX />
+                </a>
+             
+           
+
+                <a
+                  href="https://t.me/bonkeds" target="_blank"
+                  className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+                >
+                  <FaTelegram />
+                </a>
+              </div>
           </div>
         )}
       </Transition>

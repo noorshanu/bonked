@@ -54,7 +54,7 @@
     }
   }
   body{
-    background-color: #000;
+    background-color: #ffffff;
   }
 
   .hero-main{
@@ -69,6 +69,11 @@
     background-repeat: no-repeat;
 
 
+  }
+  .box-s{
+    -webkit-box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
   }
 
   .floating {

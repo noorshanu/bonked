@@ -15,23 +15,21 @@ function AboutUs() {
               alt=""
               className="mx-auto text-center h-[30px] sm:h-[60px]"
             />
+            <h1 className="text-lg sm:text-2xl font-bold text-center my-4">
+            Bonked: The Heartbeat of Solana's Meme Community
+            </h1>
             <p className=" max-w-4xl mx-auto text-center mt-[2%] mb-[3%] text-xs sm:text-xl font-bold">
-              Bonked is a limited edition series of [number] NFTs, each one
-              meticulously designed to capture the essence of [theme/concept].
-              Whether you're a seasoned NFT enthu- siast or a newcomer to the
-              world of digital art, this collection offers a captivating
+            Bonked is more than just a digital currency; it's a revolution in the Solana ecosystem. Aimed at becoming the premier community coin of Web3, Bonked is setting new standards for integration and utility across 
             </p>
 
-            <div className=" flex flex-col sm:flex-row items-center justify-between gap-4 px-12">
+            <div className=" flex flex-col sm:flex-row items-center justify-center gap-4 px-12">
               <div>
-                <img src="images/cardbg.png" alt="" className=" sm:h-auto h-[170px]" />
+                <img src="images/img2.jpeg" alt="" className=" h-auto sm:h-[250px] box-s rounded-3xl border-4 border-black" />
               </div>
               <div>
-                <img src="images/cardbg.png" alt="" className=" sm:h-auto h-[170px]" />
+                <img src="images/img3.jpeg" alt="" className="  h-auto sm:h-[250px] box-s rounded-3xl border-4 border-black" />
               </div>
-              <div>
-                <img src="images/cardbg.png" alt=""  className=" sm:h-auto h-[170px]"/>
-              </div>
+            
             </div>
           </div>
         </div>
