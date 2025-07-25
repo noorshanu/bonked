@@ -194,7 +194,7 @@ function Hero() {
       <motion.img
         src="images/hero.png"
         alt=""
-        className="mx-auto h-auto sm:h-[350px] absolute sm:relative sm:bottom-0 sm:left-0 sm:right-0"
+        className="mx-auto h-auto sm:h-[350px] absolute sm:relative bottom-0 left-0 right-0"
         variants={heroImageVariants}
         initial="hidden"
         animate="visible"
