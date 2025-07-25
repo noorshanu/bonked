@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 function Hero() {
   const [copied, setCopied] = useState(false);
-  const fullAddress = "BSFjg8wpS8ZNvn4jwARw6XhxnGqE7z2EwD1Thh";
-  const shortAddress = "BSFj8...1Thh";
+  const fullAddress = "coming soon";
+  const shortAddress = "coming soon";
 
   const copyToClipboard = async () => {
     try {
@@ -109,7 +109,7 @@ function Hero() {
       >
         <motion.div variants={itemVariants}>
           <motion.img 
-            src="images/hero-txt.png" 
+            src="images/lets.png" 
             alt="" 
             className="mx-auto h-auto sm:h-[200px] w-auto my-[1.5%]"
             variants={floatingVariants}
