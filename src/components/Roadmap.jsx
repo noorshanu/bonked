@@ -18,7 +18,7 @@ function Roadmap() {
         {/* Timeline Container */}
         <div className='relative'>
           {/* Central Timeline Line - Hidden on mobile */}
-          <div className='hidden md:block absolute left-1/2 transform -translate-x-1/2 w-2 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-500 h-full rounded-full shadow-[4px_4px_0px_rgba(0,0,0,1)]'></div>
+          <div className=' absolute left-1/2 transform -translate-x-1/2 w-2 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-500 h-full rounded-full shadow-[4px_4px_0px_rgba(0,0,0,1)]'></div>
           
           {/* Timeline Items */}
           <div className='space-y-8 md:space-y-16'>

@@ -85,16 +85,7 @@ function AboutUs() {
     }
   };
 
-  const bounceVariants = {
-    animate: {
-      y: [0, -20, 0],
-      transition: {
-        duration: 1.5,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
-  };
+
 
   const pulseVariants = {
     animate: {
@@ -143,7 +134,7 @@ function AboutUs() {
             />
             
             <motion.h1 
-              className="text-lg sm:text-2xl font-bold text-center my-4 text-black"
+              className="text-lg sm:text-2xl font-bold text-center my-4 text-black px-4"
               variants={titleVariants}
               whileHover={{
                 scale: 1.05,
@@ -155,7 +146,7 @@ function AboutUs() {
             </motion.h1>
             
             <motion.p 
-              className="max-w-4xl mx-auto text-center mt-[2%] mb-[3%] text-xs sm:text-xl font-bold text-black"
+              className="max-w-4xl mx-auto text-center mt-[2%] mb-[3%] text-xs sm:text-xl font-bold text-black px-4 leading-relaxed"
               variants={textVariants}
               whileHover={{
                 scale: 1.02,
@@ -167,18 +158,19 @@ function AboutUs() {
             </motion.p>
 
             <motion.div 
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 px-12"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-12"
               variants={containerVariants}
             >
               <motion.div
                 variants={imageVariants}
                 whileHover="hover"
                 whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto"
               >
                 <motion.img 
                   src="images/img2.jpeg" 
                   alt="" 
-                  className="h-auto sm:h-[250px] box-s rounded-3xl border-4 border-black"
+                  className="w-full max-w-[200px] sm:max-w-[300px] h-[200px] sm:h-[250px] box-s rounded-3xl border-4 border-black mx-auto"
                   variants={pulseVariants}
                   animate="animate"
                 />
@@ -188,11 +180,12 @@ function AboutUs() {
                 variants={imageVariants}
                 whileHover="hover"
                 whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto"
               >
                 <motion.img 
                   src="images/img3.jpeg" 
                   alt="" 
-                  className="h-auto sm:h-[250px] box-s rounded-3xl border-4 border-black"
+                  className="w-full max-w-[200px] sm:max-w-[300px] h-[200px] sm:h-[250px] box-s rounded-3xl border-4 border-black mx-auto"
                   variants={pulseVariants}
                   animate="animate"
                   style={{ animationDelay: "0.5s" }}

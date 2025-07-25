@@ -97,7 +97,7 @@ function ChooseHero() {
 
 
   return (
-    <section className='bg-[#0243b9] pt-[5%] pb-[8%] overflow-x-hidden' id='col'>
+    <section className='bg-[#0243b9] pt-[10%] sm:pt-[5%] pb-[8%] overflow-x-hidden' id='col'>
         <div className='container-wrapper'>
             <motion.div 
               className='relative flex flex-col sm:flex-row justify-evenly items-center gap-8 py-[6%]'
@@ -130,7 +130,7 @@ function ChooseHero() {
             </motion.div>
 
             <motion.div 
-              className='flex flex-col sm:flex-row justify-evenly gap-4'
+              className='flex flex-col sm:flex-row justify-evenly gap-6 sm:gap-4 px-4 sm:px-0'
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
@@ -140,11 +140,12 @@ function ChooseHero() {
                   variants={imageVariants}
                   whileHover="hover"
                   whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto"
                 >
                   <motion.img 
                     src="images/img1.jpeg" 
                     alt="" 
-                    className='sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
+                    className='w-full max-w-[280px] h-auto sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
                     variants={floatingVariants}
                     animate="animate"
                   />
@@ -154,11 +155,12 @@ function ChooseHero() {
                   variants={imageVariants}
                   whileHover="hover"
                   whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto"
                 >
                   <motion.img 
                     src="images/img3.jpeg" 
                     alt="" 
-                    className='sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
+                    className='w-full max-w-[280px] h-auto sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
                     //variants={floatingVariants}
                     animate="animate"
                     style={{ animationDelay: "0.5s" }}
@@ -169,11 +171,12 @@ function ChooseHero() {
                   variants={imageVariants}
                   whileHover="hover"
                   whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto"
                 >
                   <motion.img 
                     src="images/img4.jpeg" 
                     alt="" 
-                    className='sm:w-auto w-[200px] h-[200px] sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
+                    className='w-full max-w-[280px] h-auto sm:h-[370px] mx-auto box-s rounded-3xl border-4 border-black'
                     variants={floatingVariants}
                     animate="animate"
                     style={{ animationDelay: "1s" }}
