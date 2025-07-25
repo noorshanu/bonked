@@ -187,7 +187,7 @@ function Hero() {
       />
 
       <motion.a 
-        href="https://www.dextools.io/app/en/solana/pair-explorer/3m7oTxgZnsKMQrYQwgEEf1detZk6gcEthJKrqtYf6wxu?t=1711451211650" 
+        href="https://www.dextools.io/app/en/solana/pair-explorer/" 
         className="mx-auto absolute left-0 right-0 top-[80%] sm:top-[70%] text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000] hover:text-[#fff] w-[200px] text-center font-bold uppercase"
         variants={buttonVariants}
         initial={{ opacity: 0, y: 20 }}
