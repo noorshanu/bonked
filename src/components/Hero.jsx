@@ -109,7 +109,7 @@ function Hero() {
       >
         <motion.div variants={itemVariants}>
           <motion.img 
-            src="images/lets.png" 
+            src="images/bonky.png" 
             alt="" 
             className="mx-auto h-auto sm:h-[200px] w-auto my-[1.5%]"
             variants={floatingVariants}

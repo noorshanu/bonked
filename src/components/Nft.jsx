@@ -80,9 +80,9 @@ function Nft() {
             <h2 className="text-4xl sm:text-6xl font-bold text-black mb-4">
               NFT Collection 🎨
             </h2>
-            <p className="text-lg sm:text-xl text-black max-w-2xl mx-auto px-4">
+            {/* <p className="text-lg sm:text-xl text-black max-w-2xl mx-auto px-4">
               Discover our exclusive Bonked NFT collection - unique digital art on Solana blockchain! 🚀
-            </p>
+            </p> */}
           </motion.div>
 
           {/* NFT Marquee */}
