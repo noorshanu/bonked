@@ -4,7 +4,7 @@ import ChooseHero from "./components/ChooseHero";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Roadmap from "./components/Roadmap";
+import Nft from "./components/Nft";
 
 function App() {
   return (
@@ -17,10 +17,11 @@ function App() {
       <BorderSec />
       <AboutUs />
       <ChooseHero />
-      <div className=" -mt-[6.2%]">
+      {/* <div className=" -mt-[6.2%]">
         <img src="images/roadmap-head.png" alt="" className=" w-full mx-auto" />
-      </div>
-      <Roadmap/>
+      </div> */}
+      {/* <Roadmap/> */}
+      <Nft/>
       <Footer/>
       </div>
     </>
