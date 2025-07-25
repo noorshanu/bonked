@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { BsTwitterX } from "react-icons/bs";
 
 function Hero() {
   const [copied, setCopied] = useState(false);
@@ -100,7 +101,7 @@ function Hero() {
   };
 
   return (
-    <section className="hero-main relative overflow-x-hidden bg-[#ffbe2d]">
+    <section className="hero-main relative overflow-x-hidden h-[80vh] sm:h-auto bg-[#ffbe2d]">
       <motion.div
         className="container-wrapper pt-[25%] sm:pt-[10%]"
         variants={containerVariants}
@@ -111,7 +112,7 @@ function Hero() {
           <motion.img
             src="images/bonky.png"
             alt=""
-            className="mx-auto h-auto sm:h-[200px] w-auto my-[1.5%]"
+            className="mx-auto h-auto sm:h-[200px] w-auto mt-[11.5%] mb-[5%] sm:mb-[0%] sm:mt-[1.5%]"
             variants={floatingVariants}
             animate="animate"
           />
@@ -193,35 +194,61 @@ function Hero() {
       <motion.img
         src="images/hero.png"
         alt=""
-        className="mx-auto h-auto sm:h-[350px]"
+        className="mx-auto h-auto sm:h-[350px] absolute sm:relative sm:bottom-0 sm:left-0 sm:right-0"
         variants={heroImageVariants}
         initial="hidden"
         animate="visible"
       />
 
-      <motion.a
-        href="https://www.dextools.io/app/en/solana/pair-explorer/"
-        className="mx-auto absolute left-0 right-0 top-[80%] sm:top-[70%] flex items-center gap-2 justify-center 
-        "
+      <div className="mx-auto absolute left-0 right-0 top-[70%] sm:top-[77%] flex items-center gap-2 justify-center">
+        <motion.a
+          href="https://www.dextools.io/app/en/solana/pair-explorer/"
+          className="f hover:bg-[#1a4093] rounded-full p-1 text-xl text-black bg-white
+        border-2 border-[#000] hover:text-[#fff] text-center font-bold uppercase"
         variants={buttonVariants}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.6 }}
         whileHover="hover"
         whileTap="tap"
-      >
-        <a
-          href="https://www.dextools.io/app/en/solana/pair-explorer/"
-          className="f hover:bg-[#1a4093] rounded-full p-2 text-xl text-black bg-white
-        border-2 border-[#000] hover:text-[#fff] text-center font-bold uppercase"
         >
           <img
             src="images/dexs.jpg"
             alt=""
-            className=" rounded-full h-[20px] w-[20px]"
+            className=" rounded-full h-[40px] w-[40px]"
           />
-        </a>
-      </motion.a>
+        </motion.a>
+        <motion.a
+          href="https://www.dextools.io/app/en/solana/pair-explorer/"
+          className="f hover:bg-[#1a4093] rounded-full p-2 text-xl text-black bg-white
+        border-2 border-[#000] hover:text-[#fff] text-center font-bold uppercase"
+        variants={buttonVariants}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5, duration: 0.6 }}
+        whileHover="hover"
+        whileTap="tap"
+        >
+ <BsTwitterX className="text-3xl" /> 
+        </motion.a>
+        <motion.a
+          href="https://www.dextools.io/app/en/solana/pair-explorer/"
+          className="f hover:bg-[#1a4093] rounded-full p-1 text-xl text-black bg-white
+        border-2 border-[#000] hover:text-[#fff] text-center font-bold uppercase"
+        variants={buttonVariants}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5, duration: 0.6 }}
+        whileHover="hover"
+        whileTap="tap"
+        >
+          <img
+            src="images/dextools.svg"
+            alt=""
+            className=" rounded-full h-[35px] w-[35px]"
+          />
+        </motion.a>
+      </div>
 
       {/* Floating particles effect */}
       <motion.div

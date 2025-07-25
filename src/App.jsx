@@ -21,8 +21,8 @@ function App() {
         <img src="images/roadmap-head.png" alt="" className=" w-full mx-auto" />
       </div> */}
       {/* <Roadmap/> */}
-      <Nft/>
-      {/* <Footer/> */}
+      {/* <Nft/> */}
+      <Footer/>
       </div>
     </>
   );

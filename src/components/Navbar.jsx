@@ -20,10 +20,10 @@ function Navbar() {
         {/* Navigation menu */}
         <div className="hidden md:flex flex-grow justify-center">
           <a href="/" className="text-black font-bold text-lg px-3 py-2">Home</a>
-          <a href="#about" className="text-black font-bold text-lg px-3 py-2">About</a>
+          {/* <a href="#about" className="text-black font-bold text-lg px-3 py-2">About</a>
           <a href="#col" className="text-black font-bold text-lg px-3 py-2">Features</a>
          
-          <a href="#contact" className="text-black font-bold text-lg px-3 py-2">Contact Us</a>
+          <a href="#contact" className="text-black font-bold text-lg px-3 py-2">Contact Us</a> */}
         </div>
 
         {/* Wallet Connect button */}
@@ -39,7 +39,7 @@ function Navbar() {
            
 
                 <a
-                  href="https://t.me/bonkeds" target="_blank" rel="noreferrer"
+                  href="https://t.me/" target="_blank" rel="noreferrer"
                   className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
                 >
                   <FaTelegram />
@@ -86,10 +86,10 @@ function Navbar() {
             ref={ref}
             className="md:hidden bg-white rounded-2xl border-2 border-[#000] px-2 pt-2 pb-3 space-y-1 m-4"
           >
-            <a href="/" className="text-black font-bold text-lg block px-3 py-2">Home</a>
-          
-            <a href="#about" className="text-black font-bold text-lg block px-3 py-2">About</a>
-            <a href="#col" className="text-black font-bold text-lg block px-3 py-2">Features</a>
+                {/* <a href="/" className="text-black font-bold text-lg block px-3 py-2">Home</a>
+              
+                <a href="#about" className="text-black font-bold text-lg block px-3 py-2">About</a>
+                <a href="#col" className="text-black font-bold text-lg block px-3 py-2">Features</a> */}
             
             <div className=" flex items-center gap-4 text-white mb-6 ml-5">
             <a
@@ -102,7 +102,7 @@ function Navbar() {
            
 
                 <a
-                  href="https://t.me/bonkeds" target="_blank" rel="noreferrer"
+                  href="https://t.me/" target="_blank" rel="noreferrer"
                   className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
                 >
                   <FaTelegram />
