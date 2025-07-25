@@ -101,7 +101,7 @@ function Hero() {
   };
 
   return (
-    <section className="hero-main relative overflow-x-hidden h-[80vh] sm:h-auto bg-[#ffbe2d]">
+    <section className="hero-main relative overflow-x-hidden h-[90vh] sm:h-auto bg-[#ffbe2d]">
       <motion.div
         className="container-wrapper pt-[25%] sm:pt-[10%]"
         variants={containerVariants}
